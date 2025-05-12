@@ -11,12 +11,12 @@ p {
 }
 
 a {
-    color: #026efd;
+    color: #119c0c;
     text-decoration: none;
 }
 
 a:hover {
-    color: #026efd;
+    color: #316d0e;
 }
 
 h1, h2, h3, h4, h5, h6 { font-family: 'Muli', sans-serif; font-weight: normal; }
@@ -40,9 +40,9 @@ ol {
 #header {
     padding: 10px 100px;
     font-size: 20px;
-    background: #026efd;
+    background:  #119c0c;
     color: #fff;
-    border-bottom: 10px solid #026efd;
+    border-bottom: 10px solid  #119c0c;
     overflow: auto;
 }
 
@@ -69,7 +69,7 @@ ol {
 }
 
 #header ul.menu li.selected a:hover {
-    color: #026efd;
+    color:  #119c0c;
     font-weight: bold;
 }
 
@@ -120,7 +120,7 @@ label, textarea {
 
 input[type=submit], a.button {
     font-weight: bold;
-    background: #026efd;
+    background:  #119c0c;
     color: #fff;
     padding: 10px 20px;
     font-size: 14px;
@@ -182,7 +182,7 @@ ul.messages li.info {
 }
 
 ul.messages li.info a {
-    color: #1586de;
+    color:  #119c0c;
 }
 
 ul.messages li.warning {
