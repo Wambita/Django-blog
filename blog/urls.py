@@ -1,12 +1,10 @@
-from django.urls import include, path
-
+from django.urls import path
 from . import views
-from .feeds import AtomSiteNewsFeed, LatestPostsFeed
 
 urlpatterns = [
-    path("feed/rss", LatestPostsFeed(), name="post_feed"),
-    path("feed/atom", AtomSiteNewsFeed()),
-    path("", views.PostList.as_view(), name="home"),
-    # path('<slug:slug>/', views.PostDetail.as_view(), name='post_detail'),
-    path("<slug:slug>/", views.post_detail, name="post_detail"),
+    path('', views.home, name='blog-home'),
+    path('post/new/', views.post_create, name='post-create'),
+    path('post/<int:pk>/', views.post_detail, name='post-detail'),
+    path('login/', auth_views.LoginView.as_view(template_name='blog/login.html'), name='login'),
+    path('logout/', auth_views.LogoutView.as_view(template_name='blog/logout.html'), name='logout'),
 ]
