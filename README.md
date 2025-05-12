@@ -18,34 +18,32 @@ A full-featured blogging platform built with Django, featuring user authenticati
 
 1. **Clone Repository**
 ```bash
-git clone https://github.com/yourusername/django-blog.git
-cd django-blog
+git clone https://github.com/Wambita/Django-blog.git
+cd Django-blog
 ```
+2. **Install Dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-2. **Set Up Virtual Environment**
-```bash
-python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
-```
+3. **Apply Migrations:**
+   ```bash
+   python manage.py migrate
+   ```
 
-3. **Install Dependencies**
-```bash
-pip install -r requirements.txt
-```
+4. **Create Superuser (Optional):**
+   ```bash
+   python manage.py createsuperuser
+   ```
 
-4. **Database Setup**
-```bash
-python manage.py migrate
-```
+5. **Run the Development Server:**
+   ```bash
+   python manage.py runserver
+   ```
 
-5. **Create Admin User**
-```bash
-python manage.py createsuperuser
-```
-
-6. **Run Development Server**
-```bash
-python manage.py runserver
+6. **Access the Application:**
+   - Open your web browser and navigate to [http://127.0.0.1:8000/](http://127.0.0.1:8000/) to view the homepage.
+   - Access the admin panel at [http://127.0.0.1:8000/admin/](http://127.0.0.1:8000/admin/) to manage users and articles (requires superuser credentials).
 ```
 
 ## Usage

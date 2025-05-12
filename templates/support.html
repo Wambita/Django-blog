@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa; /* Light gray background */
+            padding: 50px;
+            text-align: center;
+            margin-top: 50px !important;
+            margin-bottom: 50px !important;
+        }
+        p {
+            font-size: 20px;
+        }
+        .star-container {
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        .btn {
+            background-color: #007bff; /* Blue button */
+            border-color: #007bff; /* Blue border */
+            color: #fff; /* White text color */
+        }
+
+        .btn:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+            border-color: #0056b3; /* Darker blue border on hover */
+        }
+
+        .avatar-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            grid-gap: 20px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .avatar-grid a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .avatar {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .username {
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 9px;
+        }
+    </style>
+</head>
+
+<body>
+    {% extends 'base.html' %}
+    {% block content %}
+    <div class="container star-container">
+        <p>Show some love ❤️ by starring this repository!</p>
+        <a href="https://github.com/AvinashAnand02/Django-Blog" style="display: flex; justify-content: center; align-items: center;">
+            <img style="width: XXpx; height: XXpx;" src="https://github-readme-stats.vercel.app/api/pin/?username=AvinashAnand02&repo=Django-Blog&theme=buefy" alt="GitHub stars for Django-Blog" />
+        </a>   
+        <br><br>
+        <p>List of Stargazers 🌟</p>
+
+        <div class="avatar-grid">
+            <a href="https://github.com/priyanshuuranjan">
+                <div class="avatar">
+                    <img src="https://avatars.githubusercontent.com/u/117588084?v=4" alt="priyanshuuranjan">
+                </div>
+                <div class="username">Priyanshu Ranjan</div>
+            </a>
+            <a href="https://github.com/tushar-karn">
+                <div class="avatar">
+                    <img src="https://avatars.githubusercontent.com/u/113161622?v=4" alt="tushar-karn">
+                </div>
+                <div class="username">Tushar karn</div>
+            </a>
+            <a href="https://github.com/AvinashAnand02">
+                <div class="avatar">
+                    <img src="https://avatars.githubusercontent.com/u/82769201?v=4" alt="AvinashAnand02">
+                </div>
+                <div class="username">Avinash Anand</div>
+            </a>
+            <a href="https://github.com/raviananddev">
+                <div class="avatar">
+                    <img src="https://avatars.githubusercontent.com/u/109496240?v=4" alt="raviananddev">
+                </div>
+                <div class="username">raviananddev</div>
+            </a>
+            <a href="https://github.com/raunak-aug15">
+                <div class="avatar">
+                    <img src="https://avatars.githubusercontent.com/u/93459307?v=4" alt="raunak-aug15">
+                </div>
+                <div class="username">raunak-aug15</div>
+            </a>
+            <a href="https://github.com/skauumraarv2003">
+                <div class="avatar">
+                    <img src="https://avatars.githubusercontent.com/u/113818778?v=4" alt="skauumraarv2003">
+                </div>
+                <div class="username">Saurav Kumar</div>
+            </a>
+            <a href="https://github.com/YashAgnihotri">
+                <div class="avatar">
+                    <img src="https://avatars.githubusercontent.com/u/115009895?v=4" alt="YashAgnihotri">
+                </div>
+                <div class="username">Yash Agnihotri</div>
+            </a>
+            <a href="https://github.com/Cherry861723">
+                <div class="avatar">
+                    <img src="https://avatars.githubusercontent.com/u/84600793?v=4" alt="Cherry861723">
+                </div>
+                <div class="username">Ajay Repswal</div>
+            </a>
+            <a href="https://github.com/sanjanasi">
+                <div class="avatar">
+                    <img src="https://avatars.githubusercontent.com/u/93965048?v=4" alt="sanjanasi">
+                </div>
+                <div class="username">Sanjana kumari singh</div>
+            </a>
+            <a href="https://github.com/PrabhatMrit">
+                <div class="avatar">
+                    <img src="https://avatars.githubusercontent.com/u/163015203?v=4" alt="PrabhatMrit">
+                </div>
+                <div class="username">PrabhatMrit</div>
+            </a>
+            <a href="https://github.com/demonikkk">
+                <div class="avatar">
+                    <img src="https://avatars.githubusercontent.com/u/113007497?v=4" alt="demonikkk">
+                </div>
+                <div class="username">Nikhil Kumar</div>
+            </a>
+            <a href="https://github.com/krAbhi02">
+                <div class="avatar">
+                    <img src="https://avatars.githubusercontent.com/u/101389445?v=4" alt="krAbhi02">
+                </div>
+                <div class="username">Kumar Abhishek</div>
+            </a>
+        </div>
+        <br><br>
+
+        <a href="{% url 'home' %}" class="btn btn-primary">Back to Home</a>
+    </div>
+    {% endblock content %}
+</body>
+
+</html>
